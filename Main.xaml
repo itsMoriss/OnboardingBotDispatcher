@@ -154,10 +154,10 @@
                   <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13" xml:space="preserve">CurrentRow["First Name"].ToString() +" "+  CurrentRow["Last Name"].ToString()</CSharpValue>
                 </InArgument>
                 <InArgument x:TypeArguments="x:String" x:Key="Start Date">
-                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">((DateTime)CurrentRow["Start Date"]).ToString("yyyy-MM-dd")</CSharpValue>
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_24">string.IsNullOrEmpty(CurrentRow["Start Date"].ToString()) || CurrentRow["Start Date"].ToString().Equals("N/A") ? string.Empty : DateTime.Parse(CurrentRow["Start Date"].ToString()).ToString("yyyy-MM-dd")</CSharpValue>
                 </InArgument>
                 <InArgument x:TypeArguments="x:String" x:Key="Acceptance Deadline">
-                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_15">((DateTime)CurrentRow["Acceptance Deadline"]).ToString("yyyy-MM-dd")</CSharpValue>
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_25">string.IsNullOrEmpty(CurrentRow["Acceptance Deadline"].ToString()) || CurrentRow["Acceptance Deadline"].ToString().Equals("N/A") ? string.Empty : DateTime.Parse(CurrentRow["Acceptance Deadline"].ToString()).ToString("yyyy-MM-dd")</CSharpValue>
                 </InArgument>
                 <InArgument x:TypeArguments="x:String" x:Key="Email">
                   <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">CurrentRow["Email"].ToString()</CSharpValue>
