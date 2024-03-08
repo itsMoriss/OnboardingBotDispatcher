@@ -170,7 +170,7 @@
               </ui:AddQueueItem.QueueType>
               <ui:AddQueueItem.Reference>
                 <InArgument x:TypeArguments="x:String">
-                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">CurrentRow["ID"].ToString()</CSharpValue>
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_27">CurrentRow["First Name"].ToString()</CSharpValue>
                 </InArgument>
               </ui:AddQueueItem.Reference>
             </ui:AddQueueItem>
